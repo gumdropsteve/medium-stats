@@ -23,8 +23,8 @@ Get statistics on views and reads on Medium article. Data can be used to perform
 - calendar : to get day of week; https://docs.python.org/2/library/calendar.html#module-calendar
 
 ## Scraping Snippet
-> the gif below shows the navigation with Selenium web driver (steps are in code)
-> gif only shows scraping of views, code gets both views and reads data
+- the gif below shows the navigation with Selenium web driver (steps are in code)
+- gif only shows scraping of views, code gets both views and reads data
 
 ![](mediumscraping.gif)
 
