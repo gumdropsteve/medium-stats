@@ -26,3 +26,7 @@ Get statistics on views and reads on Medium article. Data can be used to perform
 > the gif below shows the navigation with Selenium web driver (steps are in code)
 
 ![](mediumscraping.gif)
+
+## Life-Savers
+- Google log-in : https://www.hongkiat.com/blog/automate-create-login-bot-python-selenium/
+- Github GIFs : https://medium.com/@josephcardillo/how-to-add-gifs-to-your-github-readme-89c74da2ce47
