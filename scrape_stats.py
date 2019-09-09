@@ -53,7 +53,7 @@ browser.get('https://medium.com/me/stats')
 time.sleep(2)
 
 # number of months to get stats for - adjust as you please
-months = 6
+months = 5
 
 # number of views
 viewstats = []
