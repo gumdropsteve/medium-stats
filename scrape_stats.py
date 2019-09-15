@@ -1,15 +1,13 @@
 import time
-from selenium import webdriver
-from bs4 import BeautifulSoup
-import pandas as pd
 import datetime
 import calendar
-from user import u, p
+import pandas as pd
+from bs4 import BeautifulSoup
+from selenium import webdriver
 
-# account
-usernameStr = u
-# password
-passwordStr = p
+# login info
+from user import u as usernameStr
+from user import p as passwordStr
 
 # tag the options field
 options = webdriver.FirefoxOptions()  
@@ -28,7 +26,6 @@ time.sleep(5)
 
 # link to sign-in with Google - the 1st button on the page
 browser.find_element_by_xpath('//button[1]').click()
-
 time.sleep(2)
 
 # enter your Google email
@@ -36,7 +33,6 @@ browser.find_element_by_id('identifierId').send_keys(usernameStr)
 
 # click the "Next" button
 browser.find_element_by_id('identifierNext').click()
-
 time.sleep(2)
 
 # enter your account password
@@ -44,12 +40,10 @@ browser.find_element_by_xpath("//input[@name='password'][@type='password']").sen
 
 # sign-in to your Medium account with Google auth!
 browser.find_element_by_id('passwordNext').click()
-
-time.sleep(5)
+time.sleep(4)
 
 # go to stats page - you are now logged in to your Medium account
 browser.get('https://medium.com/me/stats')
-
 time.sleep(2)
 
 # number of months to get stats for - adjust as you please
